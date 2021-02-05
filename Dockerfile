@@ -5,11 +5,11 @@ USER root
 RUN apt-get update && apt-get install -y wget bzip2 unzip \
     && wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh \
     && bash ~/miniconda.sh -b -p /miniconda \
-    && rm -r ~/miniconda.sh \
+    && rm -f ~/miniconda.sh \
     && export PATH=$PATH:/miniconda/bin \
     && /miniconda/bin/conda install jupyter scipy matplotlib \
     && mkdir /notebook
-    
+
 RUN /miniconda/bin/pip3 install qiskit pylatexenc
  
 VOLUME /notebook
