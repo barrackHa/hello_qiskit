@@ -14,7 +14,7 @@ RUN /miniconda/bin/pip3 install qiskit pylatexenc
 
 # Install file type convertion tool 
 RUN /miniconda/bin/pip3 install nbconvert \
-    && apt-get update && apt-get install -y pandoc
+    && apt-get update && apt-get install -y pandoc \
     && apt-get update && apt-get install -y texlive-xetex texlive-fonts-recommended texlive-generic-recommended \
     && /miniconda/bin/pip3 install pyppeteer
     
