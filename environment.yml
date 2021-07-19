@@ -1,0 +1,15 @@
+name: qskt
+channels:
+  - defaults
+dependencies:
+  - nb_conda_kernels
+  - nb_conda
+  - python=3.8
+  - scipy 
+  - matplotlib
+  - pip
+  - pip:
+    - qiskit 
+    - pylatexenc
+    - nbconvert
+    - pyppeteer
