@@ -14,4 +14,3 @@ An example qiskit project.
 
 ### Return to Base Environment:
 `conda deactivate`
-
